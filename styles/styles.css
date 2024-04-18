@@ -1,0 +1,154 @@
+/* Google font imports */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Kalnia:wght@500&display=swap');
+
+/* Styling for body */
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 20px;
+    margin: 0;
+    background-color: var(--primary-color);
+    font-family: kalnia;
+    transition: background-color 0.5s ease;
+}
+
+
+h1, h2, h3, label{
+    color: var(--secondary-color);
+}
+
+/* Primary color schemes for the page */
+:root{
+    --primary-color: #b486b5;
+    --secondary-color: black;
+}
+
+/* Dark mode color scheme */
+.dark-mode{
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+/* Styling for header */
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+}
+
+.nav-bar img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Hover styling for the navigation bar */
+.nav-bar img:hover{
+    transform: scale(1.5) ;
+    transition: transform 0.5s ease;
+}
+
+.nav-menu{
+    display: flex;
+    text-align: center;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-menu li{
+    padding: 10px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #f0af0c;
+}
+
+.project-name{
+    display: flex;
+}
+
+.project-name img{
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+
+.project-name h3{
+    font-family: nabla;
+}
+
+/* Styling for the main section */
+
+input{
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+/* Styling for adding task details page */
+.add-task-details{
+    text-align: center;
+    padding: 150px;
+}
+
+.task-heading h2{
+    margin-bottom: 50px;
+}
+
+.task-name{
+    padding: 10px 74px 20px 65px;
+} 
+
+.est-time{
+    padding: 0 10px 40px 0;
+} 
+
+.task-name input{
+    margin-left: 130px;
+}
+
+button{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+/* Styling for button hover */
+button:hover{
+    transform: scale(1.2) ;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+/* Styling for timer page */
+.timer-wrapper{
+    text-align: center;
+    display: none;
+    padding: 80px
+}
+
+.timer h1{
+    font-size: 100px;
+    font-family: 'Digital-7', sans-serif;
+}
+
+.functionality-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.functionality-wrapper img{
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+/* Styling for the results page */
+.results{
+    display: none;
+    padding: 100px;
+}

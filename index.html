@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="javascript/timer.js"></script>
+    <title>Web Development Timer</title>
+</head>
+<body>
+    <!-- Header section -->
+    <header class="header-wrapper">
+        <div class="project-name">
+            <h3>Web Development Time Tracker</h3>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <!-- Dark mode image taken from flaticon website -->
+                <li><img src="images/night.png" alt="dark-mode-moon-image" id="mode"></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content section -->
+    <main class="main-content">
+        <!-- Section for adding task details -->
+        <section class="add-task-details" id="add-task-details">
+            <div class="task-heading">
+                <h2>Add your task details</h2>
+            </div>
+            <div class="task-name">
+                <label for="taskname">Task Name</label>
+                <input type="text" name="taskname" id="taskname" placeholder="Eg: Weather API Assignment">
+            </div>
+            <div class="est-time">
+                <label for="esttime">Estimated Time in Minutes</label>
+                <input type="text" name="esttime" id="esttime" placeholder="Eg: 102">
+            </div>
+            <div class="addtask-button">
+                <button type="submit" id="addtask-button">Add Task</button>
+            </div>
+        </section>
+        <!-- Section for starting timer -->
+        <section class="timer-wrapper" id="timer-wrapper">
+                <div id="displayTaskDetails">
+                    <h2>You are doing<span id="displayTask"></span>now.</h2>
+                    <h2>And the estimated time is <span id="displayEstTime"></span> minute(s).</h2>
+                </div>
+                <div class="timer">
+                    <h1>
+                        <span id="hh">00 :</span>
+                        <span id="mm">00 :</span>
+                        <span id="ss">00</span>
+                    </h1>
+                </div>
+                <div class="functionality-wrapper" id="timeDisplay">
+                    <!-- button logos taken from flaticon website -->
+                    <div class="timer-button">
+                        <img id="startButton" src="images/start.png" alt="Blue start button">
+                    </div>
+                    <div class="timer-button">
+                        <img id="stopButton" src="images/stop.png" alt="Blue Pause button">
+                    </div>
+                    <div class="timer-button">
+                        <img id="resetButton" src="images/reset.png" alt="Blue Reset button">
+                    </div>
+                </div>
+                <div class="error-message">
+                    <h2><span id="error-message"></span></h2>
+                </div>
+                <div class="end-task">
+                    <button id="end-task">End Task</button>
+                </div>
+        </section>
+        <!-- Section for getting the results -->
+        <section class="results" id="results">
+            <div class="result-wrapper">
+                <h2>Task Name: <span id="displayTaskResults"></span></h2>
+                <h2>Estimated Time: <span id="displayEstTimeResults"></span></h2>
+                <h2>Time Taken: <span id="displayTimeTakenResults"></span></h2>
+                <h2>You have taken <span id="displayTimeDiffResults"></span></h2>
+                <h2>You have taken <span id="displayPauseResults"></span> breaks while working on this task.</h2>
+                <h2>You have reset the timer <span id="displayResetResults"></span> time(s).</h2>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
